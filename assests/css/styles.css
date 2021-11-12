@@ -13,7 +13,8 @@ body {
     font-size: 25px;
 }
 
-#card-player, #card-computer {
+#card-player,
+#card-computer {
     display: flex !important;
 }
 
@@ -25,6 +26,7 @@ body {
     border: none;
 }
 
-#card-computer, #card-player {
+#card-computer,
+#card-player {
     height: 240px;
 }
