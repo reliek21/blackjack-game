@@ -17,29 +17,29 @@
 
 <body>
     <!-- title -->
-    <header class="title">Blackjack</header>
+    <header class="title" id="title">Blackjack</header>
 
     <!-- buttons -->
     <div class="row mt-2">
         <div class="col text-center" id="divButton">
-            <button class="btn btn-danger" id="btnNew">New game</button>
-            <button class="btn btn-primary" disabled="disabled" id="btnRequest">Request card</button>
-            <button class="btn btn-primary" disabled="disabled" id="btnStop">Stop</button>
+            <button class="btn btn-success" id="btnNew">New game</button>
+            <button class="btn btn-warning" disabled="disabled" id="btnRequest">Request card</button>
+            <button class="btn btn-danger" disabled="disabled" id="btnStop">Stop</button>
         </div>
     </div>
 
     <!-- player -->
-    <div class="row container">
+    <div class="row container mt-5">
         <div class="col">
-            <h1>Player 1 - <small>0</small></h1>
+            <h1>Player - <small>0</small></h1>
             <div id="card-player" class="divCard"></div>
         </div>
     </div>
 
     <!-- computer -->
-    <div class="row container mt-2">
+    <div class="row container mt-5">
         <div class="col">
-            <h1>Computer 3 - <small>0</small></h1>
+            <h1>Computer - <small>0</small></h1>
             <div id="card-computer" class="divCard"></div>
         </div>
     </div>

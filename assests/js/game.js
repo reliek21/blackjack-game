@@ -9,7 +9,8 @@ const myModule = (() => {
 
     // references of the HTML
     const btnRequest = document.querySelector('#btnRequest'),
-        btnStop = document.querySelector('#btnStop');
+        btnStop = document.querySelector('#btnStop'),
+        title = document.querySelector('#title');
 
     const divPlayersCards = document.querySelectorAll('.divCard'),
         smallText = document.querySelectorAll('small');
@@ -19,6 +20,7 @@ const myModule = (() => {
         deck = createDeck();
 
         playerPoints = [];
+        title.innerHTML = "Blackjack";
 
         for (let i = 0; i < numPlayers; i++) {
             playerPoints.push(0);
@@ -88,16 +90,16 @@ const myModule = (() => {
     // select winner
     const selectWinner = () => {
         const [minPoints, pointsComputer] = playerPoints;
-
+ 
         setTimeout(() => {
             if (pointsComputer === minPoints) {
-                alert('Nobody win!');
+                title.innerHTML = "Nobody Win 🧐";
             } else if (minPoints > 21) {
-                alert('Computer won');
+                title.innerHTML = "Computer won 🚨";
             } else if (pointsComputer > 21) {
-                alert('Player won');
+                title.innerHTML = "Player won 🔥";
             } else {
-                alert('Computer won!');
+                title.innerHTML = "Computer won 🚨";
             }
         }, 100);
 

@@ -1,16 +1,20 @@
 html,
 body {
     margin: 0;
-    background-color: #2f4f30;
+    background-color: #004643;
     color: white;
 }
 
 .title {
-    background-color: black;
+    background-color: #001e1d;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 25px;
+}
+
+button {
+    margin-left: .5rem;
 }
 
 #card-player,
