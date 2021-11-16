@@ -1,3 +1,3 @@
 # Blackjack Game
 
-## [¡Play Now!](https://reliek21.github.io/blackjack-game/)
+### [¡Play Now!](https://reliek21.github.io/blackjack-game/)
